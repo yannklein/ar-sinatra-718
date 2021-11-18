@@ -5,10 +5,10 @@ gem 'sinatra-contrib'
 gem 'sinatra-activerecord'
 gem 'rake'
 gem 'pg'
+gem 'rspec'
+gem 'rubocop'
+gem 'pry'
 
 group :development, :test do
-  gem 'pry'
   gem 'sqlite3'
-  gem 'rubocop'
-  gem 'rspec'
 end
