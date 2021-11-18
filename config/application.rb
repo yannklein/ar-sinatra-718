@@ -1,4 +1,5 @@
 require 'active_record'
+require 'pg'
 require 'sqlite3'
 require 'yaml'
 

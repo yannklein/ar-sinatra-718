@@ -4,7 +4,8 @@ require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
 get '/' do
-  "Hello!"
+  @pokemons = Pokemon.all
+  erb :index
 end
 
 # As a user I can list all the STUFFs
