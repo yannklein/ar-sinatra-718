@@ -1,6 +1,6 @@
 require 'active_record'
 require 'pg'
-require 'sqlite3'
+# require 'sqlite3'
 require 'yaml'
 
 # This is some boilerplate code to read the config/database.yml file
