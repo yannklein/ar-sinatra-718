@@ -8,7 +8,3 @@ gem 'pg'
 gem 'rspec'
 gem 'rubocop'
 gem 'pry'
-
-group :development, :test do
-  gem 'sqlite3'
-end

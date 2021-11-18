@@ -1,7 +1,7 @@
-require_relative 'config/application'
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/activerecord'
+require_relative 'config/application'
 
 get '/' do
   @pokemons = Pokemon.all
@@ -15,3 +15,14 @@ end
 # Ruby embedded into view files
 # pe + tab   ->    <%=  %>     (display something)
 # er + tab   ->    <%   %>     (display nothing)
+
+
+
+
+
+# Some configuration for Sinatra to be hosted and operational on Heroku
+after do
+  # Close the connection after the request is done so that we don't
+  # deplete the ActiveRecord connection pool.
+  ActiveRecord::Base.connection.close
+end
