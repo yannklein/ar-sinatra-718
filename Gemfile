@@ -9,3 +9,7 @@ gem 'rspec'
 gem 'rubocop'
 gem 'pry'
 gem 'faker'
+
+group :development do
+  gem 'sqlite3'
+end

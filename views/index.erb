@@ -4,7 +4,7 @@
   <% @pokemons.each do |pokemon| %>
     <div class="col mb-4">
       <div class="card">
-        <img height=300 src="https://imgsrc.space/<%= pokemon.name %>?w=800&h=600" class="card-img-top" alt="...">
+        <img style="object-fit:cover" height=300 src="https://imgsrc.space/<%= pokemon.name %>?w=800&h=600" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><%= pokemon.name %></h5>
           <p class="card-text">Coming from <%= pokemon.location %>.</p>
